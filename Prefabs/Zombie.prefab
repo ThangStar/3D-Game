@@ -1,0 +1,438 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1594375740866712877
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2441423401690366540}
+  - component: {fileID: 1784082492285591195}
+  - component: {fileID: 3354354842505313930}
+  m_Layer: 0
+  m_Name: ItSeez3D Haircut
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2441423401690366540
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594375740866712877}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5007855307474865683}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &1784082492285591195
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594375740866712877}
+  m_Mesh: {fileID: 0}
+--- !u!23 &3354354842505313930
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594375740866712877}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &2525481799836695206
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5007855307474865683}
+  - component: {fileID: 5897255356665605590}
+  m_Layer: 0
+  m_Name: Avatar 13/10/23 11:45:29
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5007855307474865683
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2525481799836695206}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.0523187, y: 0.9791542, z: 0.1937803, w: 0.031128466}
+  m_LocalPosition: {x: 0.11365196, y: 6.1000004, z: 0.5020792}
+  m_LocalScale: {x: 3.749999, y: 3.7500002, z: 3.7499995}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 9137081999513604537}
+  - {fileID: 2441423401690366540}
+  m_Father: {fileID: 7623234283636019094}
+  m_LocalEulerAnglesHint: {x: -22.1, y: 101.27, z: 7.1}
+--- !u!114 &5897255356665605590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2525481799836695206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a199ca7cbcb1dad49840f4187f1741fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  code: offline_avatar_20231013114523_646db44af85c4b7f816c09d727c34a9b
+  haircuts:
+  - base\female_NewSea_J086f
+  - base\female_NewSea_J096f
+  - base\female_NewSea_J123f
+  - base\male_NewSea_J003m
+  - base\male_NewSea_J082m
+  - base\male_makehuman_short02
+  - facegen\facegen_afro
+  - facegen\facegen_balding
+  - facegen\facegen_bob
+  - facegen\facegen_bob_parted
+  - facegen\facegen_burr_cut
+  - facegen\facegen_classic_side_part
+  - facegen\facegen_classic_tapper
+  - facegen\facegen_corkscrew_curls
+  - facegen\facegen_cowlick
+  - facegen\facegen_cowlick2
+  - facegen\facegen_crew_cut
+  - facegen\facegen_crew_cut2
+  - facegen\facegen_crew_cut3
+  - facegen\facegen_cuckoo_nest
+  - facegen\facegen_curtained_hair
+  - facegen\facegen_flattop
+  - facegen\facegen_high_volume_brushed_up
+  - facegen\facegen_long_afro
+  - facegen\facegen_long_bob
+  - facegen\facegen_long_crimped
+  - facegen\facegen_long_dreads
+  - facegen\facegen_long_hair
+  - facegen\facegen_long_hair2
+  - facegen\facegen_man_bun
+  - facegen\facegen_man_bun2
+  - facegen\facegen_mid_length_messy
+  - facegen\facegen_mid_length_ruffled
+  - facegen\facegen_pigtails
+  - facegen\facegen_ponytail
+  - facegen\facegen_short
+  - facegen\facegen_short_bob_asymmetrical_bangs
+  - facegen\facegen_short_curls
+  - facegen\facegen_short_curls2
+  - facegen\facegen_short_parted
+  - facegen\facegen_side_french_braid
+  - facegen\facegen_straight_bob_bangs
+  - facegen\facegen_top_knot
+  - facegen\facegen_very_long
+  - facegen\facegen_wavy_shag
+  selectedHairstyle: 5
+  avgHaircutColor: {r: 0.29604423, g: 0.23611654, b: 0.1944595, a: 1}
+  predictedHaircutColor: {r: 0.14117648, g: 0.2, b: 0.21568628, a: 1}
+  headMeshRenderer: {fileID: 4160229926400019381}
+  hairMeshRenderer: {fileID: 3354354842505313930}
+  levelOfDetails: 0
+--- !u!1 &4998321564645977301
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9137081999513604537}
+  - component: {fileID: 4160229926400019381}
+  m_Layer: 0
+  m_Name: ItSeez3D Head
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9137081999513604537
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4998321564645977301}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5007855307474865683}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!137 &4160229926400019381
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4998321564645977301}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 3
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
+  m_Mesh: {fileID: 0}
+  m_Bones: []
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 0}
+  m_AABB:
+    m_Center: {x: 0.002135504, y: -0.003620781, z: 0.0145619325}
+    m_Extent: {x: 0.09328264, y: 0.13135406, z: 0.11034012}
+  m_DirtyAABB: 0
+--- !u!1 &7183391868431404425
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 901885030245010408}
+  m_Layer: 0
+  m_Name: Zombie
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &901885030245010408
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7183391868431404425}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.348, y: 0.076, z: -8.853}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7623234283636019094}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &7618046965643146833
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 901885030245010408}
+    m_Modifications:
+    - target: {fileID: 32535006997035463, guid: 9548f11558ece614094332e5d22bada9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 32535006997035463, guid: 9548f11558ece614094332e5d22bada9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 32535006997035463, guid: 9548f11558ece614094332e5d22bada9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 32535006997035463, guid: 9548f11558ece614094332e5d22bada9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8002084
+      objectReference: {fileID: 0}
+    - target: {fileID: 32535006997035463, guid: 9548f11558ece614094332e5d22bada9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.000000007217749
+      objectReference: {fileID: 0}
+    - target: {fileID: 32535006997035463, guid: 9548f11558ece614094332e5d22bada9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.599722
+      objectReference: {fileID: 0}
+    - target: {fileID: 32535006997035463, guid: 9548f11558ece614094332e5d22bada9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 32535006997035463, guid: 9548f11558ece614094332e5d22bada9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 32535006997035463, guid: 9548f11558ece614094332e5d22bada9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -73.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 32535006997035463, guid: 9548f11558ece614094332e5d22bada9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 32535006997194151, guid: 9548f11558ece614094332e5d22bada9, type: 3}
+      propertyPath: m_Name
+      value: ZombieRig
+      objectReference: {fileID: 0}
+    - target: {fileID: 32535006997194151, guid: 9548f11558ece614094332e5d22bada9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140839338395283706, guid: 9548f11558ece614094332e5d22bada9, type: 3}
+      propertyPath: levelOfDetails
+      value: -70
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140839338395283706, guid: 9548f11558ece614094332e5d22bada9, type: 3}
+      propertyPath: avgHaircutColor.b
+      value: 0.1273585
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140839338395283706, guid: 9548f11558ece614094332e5d22bada9, type: 3}
+      propertyPath: avgHaircutColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140839338395283706, guid: 9548f11558ece614094332e5d22bada9, type: 3}
+      propertyPath: avgHaircutColor.r
+      value: 0.2346954
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140839338395283706, guid: 9548f11558ece614094332e5d22bada9, type: 3}
+      propertyPath: haircuts.Array.data[0]
+      value: base\female_NewSea_J096f
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140839338395283706, guid: 9548f11558ece614094332e5d22bada9, type: 3}
+      propertyPath: haircuts.Array.data[1]
+      value: base\female_NewSea_J123f
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140839338395283706, guid: 9548f11558ece614094332e5d22bada9, type: 3}
+      propertyPath: haircuts.Array.data[2]
+      value: base\male_NewSea_J003m
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140839338395283706, guid: 9548f11558ece614094332e5d22bada9, type: 3}
+      propertyPath: haircuts.Array.data[3]
+      value: base\male_NewSea_J082m
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140839338395283706, guid: 9548f11558ece614094332e5d22bada9, type: 3}
+      propertyPath: haircuts.Array.data[4]
+      value: base\male_makehuman_short02
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140839338395283706, guid: 9548f11558ece614094332e5d22bada9, type: 3}
+      propertyPath: haircuts.Array.data[5]
+      value: facegen\facegen_afro
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140839338395283706, guid: 9548f11558ece614094332e5d22bada9, type: 3}
+      propertyPath: haircuts.Array.data[6]
+      value: facegen\facegen_balding
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140839338395283706, guid: 9548f11558ece614094332e5d22bada9, type: 3}
+      propertyPath: haircuts.Array.data[7]
+      value: facegen\facegen_bob
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140839338395283706, guid: 9548f11558ece614094332e5d22bada9, type: 3}
+      propertyPath: haircuts.Array.data[8]
+      value: facegen\facegen_bob_parted
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140839338395283706, guid: 9548f11558ece614094332e5d22bada9, type: 3}
+      propertyPath: haircuts.Array.data[9]
+      value: base\female_NewSea_J086f
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140839338395283706, guid: 9548f11558ece614094332e5d22bada9, type: 3}
+      propertyPath: predictedHaircutColor.b
+      value: 0.08962262
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140839338395283706, guid: 9548f11558ece614094332e5d22bada9, type: 3}
+      propertyPath: predictedHaircutColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2140839338395283706, guid: 9548f11558ece614094332e5d22bada9, type: 3}
+      propertyPath: predictedHaircutColor.r
+      value: 0.32611433
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 32535006997035463, guid: 9548f11558ece614094332e5d22bada9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5007855307474865683}
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9548f11558ece614094332e5d22bada9, type: 3}
+--- !u!4 &7623234283636019094 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 32535006997035463, guid: 9548f11558ece614094332e5d22bada9, type: 3}
+  m_PrefabInstance: {fileID: 7618046965643146833}
+  m_PrefabAsset: {fileID: 0}
