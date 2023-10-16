@@ -2,9 +2,13 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
+using System.Threading.Tasks;
 
 public class typewriterUI : MonoBehaviour
 {
+
     Text _text;
     TMP_Text _tmpProText;
     string writer;
@@ -13,35 +17,68 @@ public class typewriterUI : MonoBehaviour
     [SerializeField] float timeBtwChars = 0.03f;
     [SerializeField] string leadingChar = "";
     [SerializeField] bool leadingCharBeforeDelay = false;
+  
     int counterNext = 0;
-    SubTitle[] subTitles = MyData.getSubTitles();
-
+    public int sceneNum = 1;
+    SubTitle[] subTitles;
+    public GameObject[] audioObj;
     // Use this for initialization
     void Start()
     {
+        switch (sceneNum)
+        {
+            case 1:
+                subTitles = MySubTitle.getScene1();
+                break;
+            case 2:
+                subTitles = MySubTitle.getScene2();
+                audioObj = GameObject.FindGameObjectsWithTag("audio");
+                break;
+        }
         _text = GameObject.FindGameObjectWithTag("sub_title").GetComponent<Text>();
 
         if (_text != null)
         {
-            writer = _text.text;
-            _text.text = "";
-            StartCoroutine("TypeWriterText");
+            nextWord();
         }
     }
     public void nextWord()
     {
-        
-        ++counterNext;
-        print("COUNTER: "+counterNext+" LENGTH: "+subTitles.Length);
-        if(counterNext>=subTitles.Length){
-            return;
+        switch (sceneNum)
+        {
+            case 2:
+                if (counterNext == 1)
+                {
+                    audioObj[1].GetComponent<AudioSource>().Play();
+                }
+                else if (counterNext == 3)
+                {
+                    audioObj[2].GetComponent<AudioSource>().Play();
+                }
+                break;
         }
-        print("COUNTER: "+counterNext+" LENGTH: "+subTitles.Length);
+
+        if (counterNext >= subTitles.Length)
+        {
+            return;     
+        }
         StopCoroutine("TypeWriterText");
         writer = subTitles[counterNext].subTitle;
         StartCoroutine("TypeWriterText");
+        counterNext++;
     }
 
+    // IEnumerable LoadLeverAsync()
+    // {
+    //     AsyncOperation loadOperation = SceneManager.LoadSceneAsync(levelToLoad);
+    //     loadOperation.allowSceneActivation = false;
+    //     while (!loadOperation.isDone)
+    //     {
+    //         float progressValue = Mathf.Clamp01(loadOperation.progress / 0.9f);
+    //         loadingSlider.value = progressValue;
+    //         yield return null;
+    //     }
+    // }
     IEnumerator TypeWriterText()
     {
         _text.text = leadingCharBeforeDelay ? leadingChar : "";
@@ -65,26 +102,4 @@ public class typewriterUI : MonoBehaviour
         }
     }
 
-    IEnumerator TypeWriterTMP()
-    {
-        _tmpProText.text = leadingCharBeforeDelay ? leadingChar : "";
-
-        yield return new WaitForSeconds(delayBeforeStart);
-
-        foreach (char c in writer)
-        {
-            if (_tmpProText.text.Length > 0)
-            {
-                _tmpProText.text = _tmpProText.text.Substring(0, _tmpProText.text.Length - leadingChar.Length);
-            }
-            _tmpProText.text += c;
-            _tmpProText.text += leadingChar;
-            yield return new WaitForSeconds(timeBtwChars);
-        }
-
-        if (leadingChar != "")
-        {
-            _tmpProText.text = _tmpProText.text.Substring(0, _tmpProText.text.Length - leadingChar.Length);
-        }
-    }
 }
