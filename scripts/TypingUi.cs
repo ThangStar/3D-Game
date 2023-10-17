@@ -17,12 +17,14 @@ public class typewriterUI : MonoBehaviour
     [SerializeField] float timeBtwChars = 0.03f;
     [SerializeField] string leadingChar = "";
     [SerializeField] bool leadingCharBeforeDelay = false;
-  
+
     int counterNext = 0;
     public int sceneNum = 1;
     SubTitle[] subTitles;
     public GameObject[] audioObj;
     // Use this for initialization
+    [Header("Button next")]
+    [SerializeField] Button btnNext;
     void Start()
     {
         switch (sceneNum)
@@ -51,7 +53,7 @@ public class typewriterUI : MonoBehaviour
                 {
                     audioObj[1].GetComponent<AudioSource>().Play();
                 }
-                else if (counterNext == 3)
+                else if (counterNext == 2)
                 {
                     audioObj[2].GetComponent<AudioSource>().Play();
                 }
@@ -60,7 +62,7 @@ public class typewriterUI : MonoBehaviour
 
         if (counterNext >= subTitles.Length)
         {
-            return;     
+            return;
         }
         StopCoroutine("TypeWriterText");
         writer = subTitles[counterNext].subTitle;
@@ -81,6 +83,7 @@ public class typewriterUI : MonoBehaviour
     // }
     IEnumerator TypeWriterText()
     {
+        btnNext.interactable = false;
         _text.text = leadingCharBeforeDelay ? leadingChar : "";
 
         yield return new WaitForSeconds(delayBeforeStart);
@@ -100,6 +103,7 @@ public class typewriterUI : MonoBehaviour
         {
             _text.text = _text.text.Substring(0, _text.text.Length - leadingChar.Length);
         }
+        btnNext.interactable = true;
     }
 
 }

@@ -397,6 +397,7 @@ MonoBehaviour:
   leadingCharBeforeDelay: 0
   sceneNum: 1
   audioObj: []
+  btnNext: {fileID: 1741749529}
 --- !u!4 &932969135
 Transform:
   m_ObjectHideFlags: 0
@@ -426,7 +427,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1857551737152640431, guid: ecff99b098ebdc347969120a99cfccda, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4882075915681636983, guid: ecff99b098ebdc347969120a99cfccda, type: 3}
       propertyPath: m_Pivot.x
@@ -770,6 +771,17 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!114 &1741749529 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5934572269400541674, guid: 55d1137792059164ebc98695eb51f3ae, type: 3}
+  m_PrefabInstance: {fileID: 5597985176123782891}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1872884978
 PrefabInstance:
   m_ObjectHideFlags: 0

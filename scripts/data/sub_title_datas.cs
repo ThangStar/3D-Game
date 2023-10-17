@@ -13,7 +13,7 @@ public static class MySubTitle
     public static SubTitle[] getScene2()
     {
         SubTitle[] subTitles = {
-            new SubTitle("Tôi luôn cảm thấy sợ mỗi khi đi qua con đường này, tiếng gió thôi thổi cũng làm tôi sởn ra gà"),
+            new SubTitle("Tôi luôn cảm thấy sợ mỗi khi đi qua con đường này, tiếng gió thổi cũng làm tôi sởn ra gà"),
             new SubTitle("????"),
             new SubTitle("Chết tiệt, đi xe kiểu gì vậy chứ"),
             new SubTitle("Đây là đâu.."),
