@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 4a0284bdcc04b8949af162e1b28b5920
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material_0
+    second: {fileID: 2100000, guid: 4c38f628964d9c4468b0147999967712, type: 2}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: f762c10ef46e7374fbb8914152259594, type: 3}
+  importSettings:
+    needsReimportForTextures: 0
+    materials: 1
+    generateLightmapUVs: 0
+    normals: 0
+    tangents: 0
+    animationType: 1
+    avatarDefinition: 1
+    avatar: {instanceID: 0}
+    isDidimo: 0
