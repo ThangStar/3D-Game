@@ -56,9 +56,6 @@ public class MyLoading : MonoBehaviour
             {
                 loadingCanvas.SetActive(true);
                 StartCoroutine(LoadSceneAsync());
-            }else{
-                StopAllCoroutines();
-                SceneManager.LoadScene(levelToLoad);
             }
         }
         // Show the loading screen (enable the Canvas with the loading screen UI elements)
@@ -72,7 +69,6 @@ public class MyLoading : MonoBehaviour
         AsyncOperation loadOperation = SceneManager.LoadSceneAsync(levelToLoad);
 
         // Don't show the loading screen until the scene is fully loaded
-        loadOperation.allowSceneActivation = false;
 
         while (!loadOperation.isDone)
         {

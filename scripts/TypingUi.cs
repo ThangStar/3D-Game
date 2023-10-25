@@ -66,6 +66,7 @@ public class typewriterUI : MonoBehaviour
         }
         StopCoroutine("TypeWriterText");
         writer = subTitles[counterNext].subTitle;
+        GameObject.FindGameObjectWithTag("fullname").GetComponent<Text>().text = subTitles[counterNext].fullName;
         StartCoroutine("TypeWriterText");
         counterNext++;
     }
@@ -87,7 +88,6 @@ public class typewriterUI : MonoBehaviour
         _text.text = leadingCharBeforeDelay ? leadingChar : "";
 
         yield return new WaitForSeconds(delayBeforeStart);
-
         foreach (char c in writer)
         {
             if (_text.text.Length > 0)
